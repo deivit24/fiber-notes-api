@@ -1,7 +1,7 @@
 package products
 
 import (
-	"go-fiber-api-docker/pkg/common/models"
+	"github.com/deivit24/api-db/pkg/common/models"
 
 	"github.com/gofiber/fiber/v2"
 )

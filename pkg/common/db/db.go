@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"go-fiber-api-docker/pkg/common/config"
-	"go-fiber-api-docker/pkg/common/models"
+	"github.com/deivit24/api-db/pkg/common/config"
+	"github.com/deivit24/api-db/pkg/common/models"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"

@@ -1,4 +1,4 @@
-module go-fiber-api-docker
+module github.com/deivit24/api-db
 
 go 1.18
 
@@ -31,7 +31,7 @@ require (
 
 require (
 	github.com/andybalholm/brotli v1.0.4 // indirect
-	github.com/gofiber/fiber/v2 v2.31.0 // indirect
+	github.com/gofiber/fiber/v2 v2.31.0
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.4 // indirect
 	github.com/klauspost/compress v1.15.1 // indirect
