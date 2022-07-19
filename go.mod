@@ -1,8 +1,14 @@
-module github.com/deivit24/api-db
+module github.com/deivit24/fiber-notes-api
 
 go 1.18
 
-require gorm.io/gorm v1.23.3
+require (
+	github.com/badoux/checkmail v1.2.1
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
+	github.com/jinzhu/gorm v1.9.16
+	golang.org/x/crypto v0.0.0-20220214200702-86341886e292
+	gorm.io/gorm v1.23.3
+)
 
 require (
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
@@ -23,7 +29,6 @@ require (
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/subosito/gotenv v1.2.0 // indirect
-	golang.org/x/crypto v0.0.0-20220214200702-86341886e292 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	gopkg.in/ini.v1 v1.66.2 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect

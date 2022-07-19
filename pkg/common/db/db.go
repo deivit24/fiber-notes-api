@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/deivit24/api-db/pkg/common/config"
-	"github.com/deivit24/api-db/pkg/common/models"
+	"github.com/deivit24/fiber-notes-api/pkg/common/config"
+	"github.com/deivit24/fiber-notes-api/pkg/common/models"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
@@ -20,6 +20,7 @@ func Init(c *config.Config) *gorm.DB {
 	}
 
 	db.AutoMigrate(&models.Product{})
+	db.AutoMigrate(&models.User{})
 
 	return db
 }

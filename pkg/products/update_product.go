@@ -1,7 +1,7 @@
 package products
 
 import (
-	"github.com/deivit24/api-db/pkg/common/models"
+	"github.com/deivit24/fiber-notes-api/pkg/common/models"
 
 	"github.com/gofiber/fiber/v2"
 )

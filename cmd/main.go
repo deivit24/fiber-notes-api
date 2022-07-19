@@ -3,9 +3,10 @@ package main
 import (
 	"log"
 
-	"github.com/deivit24/api-db/pkg/common/config"
-	"github.com/deivit24/api-db/pkg/common/db"
-	"github.com/deivit24/api-db/pkg/products"
+	"github.com/deivit24/fiber-notes-api/pkg/common/config"
+	"github.com/deivit24/fiber-notes-api/pkg/common/db"
+	"github.com/deivit24/fiber-notes-api/pkg/products"
+	"github.com/deivit24/fiber-notes-api/pkg/users"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 
 	"github.com/gofiber/fiber/v2"
@@ -26,6 +27,7 @@ func main() {
     AllowHeaders:  "Origin, Content-Type, Accept",
 	}))
 	products.RegisterRoutes(app, h)
+	users.RegisterRoutes(app, h)
 
 	app.Listen(c.Port)
 }
